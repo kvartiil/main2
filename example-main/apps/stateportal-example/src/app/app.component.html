@@ -1,0 +1,50 @@
+<header>
+  <lib-stateportal-header
+    [siteType]="(siteType$ | async)!"
+    [isLoggedIn]="(isLoggedIn$ | async)!"
+    [isSideNavOpen]="(sideNavMobileOpen$ | async)!"
+    [apiGwUrl]="apiGwUrl"
+    [notifyEnabled]="notifyEnabled"
+    (actionTrigger)="onHeaderAction($event)"
+  ></lib-stateportal-header>
+</header>
+
+<div class="main-container-parent">
+  <aside class="main-container-child">
+    <lib-stateportal-sidemegamenu
+      [selectRepresentativeByCode]="selectRepresentativeByCode()"
+      [repType]="(sidenavRepType$ | async)!"
+      [smallMenuOpen]="sideNavMobileOpen$"
+      [activeRoute]="activeRoute"
+      [language]="currentLang"
+      [timurUrl]="timurUrl"
+      [apiUrl]="apiGwUrl"
+      [testIfLinkInternal]="testInternalLinkForSidenav"
+      (menuToggle)="closeSideNavMobile()"
+      (authTrigger)="onAuthTrigger($event)"
+      (langChanged)="onLangChange($event)"
+      (breadcrumbsChanged)="setBreadcrumbs($event)"
+      class="sidenav-container"
+    ></lib-stateportal-sidemegamenu>
+  </aside>
+  <div class="main-container-child main-container-child-content">
+    <main
+      #mainContent
+      [attr.aria-label]="'jump-to-main-content.main-container-arial-label' | translate"
+      class="main d-flex flex-column flex-grow-1"
+    >
+      <div class="flex-grow-1">
+        <router-outlet></router-outlet>
+      </div>
+    </main>
+  </div>
+</div>
+
+<lib-stateportal-footer
+  [eestiEeUrl]="eestiEeUrl"
+  [apiUrl]="apiGwUrl"
+  [repType]="(siteType$ | async)!"
+  [language]="currentLang"
+  [sdg]="(footerSdg$ | async)!"
+  [testIfLinkInternal]="testInternalLinkForFooter"
+></lib-stateportal-footer>

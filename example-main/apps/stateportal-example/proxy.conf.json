@@ -1,0 +1,14 @@
+{
+  "/api": {
+    "target": "http://localhost:3333",
+    "secure": false
+  },
+  "/router/api": {
+    "target": "https://ruuter.arendus.eesti.ee",
+    "pathRewrite": {
+      "^/router/api": ""
+    },
+    "changeOrigin": true,
+    "secure": false
+  }
+}

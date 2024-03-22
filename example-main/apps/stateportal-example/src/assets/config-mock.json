@@ -1,0 +1,24 @@
+{
+  "tim": {
+    "url": "https://tim.arendus.eesti.ee/tim",
+    "callbackUrl": "https://local.arendus.eesti.ee"
+  },
+  "ruuter": {
+    "url": "/ruuter/api"
+  },
+  "matomo": {
+    "url": "http://rig-matomo-02.dev.riaint.ee/",
+    "id": "1"
+  },
+  "jmap": {
+    "apiUrl": "https://www.ng.arendus.eesti.ee/postkast/mail/jmap",
+    "authUrl": " https://www.ng.arendus.eesti.ee/postkast/mail/.well-known/jmap"
+  },
+  "sdgLogoUrl": "https://europa.eu/youreurope/",
+  "portalSearch": {
+    "querySuggestionsLength": "3",
+    "querySearchLength": "2",
+    "inputDebounceTime": "200",
+    "suggestionListLimit": "10"
+  }
+}

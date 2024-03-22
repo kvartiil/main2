@@ -1,0 +1,59 @@
+{
+  "tim": {
+    "url": "https://www.arendus.eesti.ee/timur",
+    "callbackUrl": "https://local.arendus.eesti.ee",
+    "registrationId": "govsso"
+  },
+  "ruuter": {
+    "url": "/ruuter/api"
+  },
+  "orbeon": {
+    "url": "/orbeon"
+  },
+  "matomo": {
+    "url": "https://matomo.ria.ee/",
+    "id": "1"
+  },
+  "jmap": {
+    "apiUrl": "/postkast/mail/jmap",
+    "authUrl": "/postkast/mail/.well-known/jmap"
+  },
+  "sdgLogoUrl": "https://europa.eu/youreurope/",
+  "portalSearch": {
+    "querySuggestionsLength": "3",
+    "querySearchLength": "2",
+    "inputDebounceTime": "200",
+    "suggestionListLimit": "10"
+  },
+  "apiGwUrl": "https://www.arendus.eesti.ee/api/",
+  "featureFlags": {
+    "RIG3639LifeEvent": "true",
+    "notifyServiceNotifications": "true",
+    "notifyHeaderNotifications": "true",
+    "prescriptionQuickQuery": "true",
+    "employmentIncapacityBenefitQuickQuery": "true",
+    "dentalBenefitQuickQuery": "true",
+    "documentQuickQuery": "true",
+    "notaryDocumentQuickQuery": "true",
+    "propertyQuickQuery": "true",
+    "drivingLicenseQuickQuery": "true",
+    "europeanHealthInsuranceQuickQuery": "true",
+    "vehicleQuickQuery": "true",
+    "weaponQuickQuery": "true",
+    "weaponPermitQuickQuery": "true",
+    "healthInsuranceAccountQuickQuery": "true",
+    "landingBanner": "true",
+    "articleVisualUpdate": "true",
+    "dashboardEnabled": "true",
+    "showCookie": "true",
+    "showNewNewsFeed": "true",
+    "personalDataFamily": "true",
+    "RIG3739": "true",
+    "RIG3809": "true",
+    "useNewDatatrackerOptions": "true",
+    "dashboardVehicle": "false",
+    "selectRepresentativeByCodeEE1293": "true",
+    "eIDServiceRIG3900": "false",
+    "showFlaggedServicesLandingRIG5108": "true"
+  }
+}
